@@ -12,6 +12,7 @@
       apt-mark hold linux-modules-5.4.0-137-generic linux-headers-5.4.0-137 linux-headers-5.4.0-137-generic linux-headers-generic linux-image-unsigned-5.4.0-137-generic linux-modules-5.4.0-137-generic
       apt upgrade -y
       apt autoremove -y
+      reboot now
     SHELL
     end
   end

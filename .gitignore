@@ -2,6 +2,9 @@
 __pycache__/
 .python-version
 
+# vagrant
+.vagrant/
+
 # nodejs
 node_modules/
 
