@@ -9,7 +9,7 @@
     # bash provisioning
     config.vm.provision "shell", inline: <<-SHELL
       apt update
-      apt-mark hold linux-modules-5.4.0-137-generic linux-headers-5.4.0-137 linux-headers-5.4.0-137-generic linux-headers-generic linux-image-unsigned-5.4.0-137-generic linux-modules-5.4.0-137-generic
+      apt-mark hold linux-image-generic linux-headers-generic
       apt upgrade -y
       apt autoremove -y
       reboot now

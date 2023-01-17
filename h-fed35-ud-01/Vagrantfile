@@ -4,5 +4,13 @@
     config.vm.provider "vmware_desktop" do |vmware|
       vmware.gui = true
       vmware.allowlist_verified = true
+    
+    # bash provision script
+    config.vm.provision "shell", inline: <<-SHELL
+    echo "exclude=kernel*" >> /etc/dnf/dnf.conf
+    dnf update -y
+    dnf autoremove -y
+    reboot now
+    SHELL
     end
   end

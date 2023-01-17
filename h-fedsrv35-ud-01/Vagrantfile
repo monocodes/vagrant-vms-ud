@@ -16,13 +16,14 @@
       # vmware.memory = "3096"
       # vmware.cpus = 2
     
-      # bash provision script
+    # bash provision script
     config.vm.provision "shell", inline: <<-SHELL
     echo "exclude=kernel*" >> /etc/dnf/dnf.conf
     dnf update -y
     dnf install langpacks-en -y
     localectl set-locale LANG=en_US.UTF-8
     localectl set-keymap us
+    dnf autoremove -y
     reboot now
     SHELL
     end
