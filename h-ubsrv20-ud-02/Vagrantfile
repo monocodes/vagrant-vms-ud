@@ -1,0 +1,17 @@
+  Vagrant.configure("2") do |config| 
+    config.vm.box = "spox/ubuntu-arm" 
+    config.vm.box_version = "1.0.0"
+    config.vm.network "private_network", ip: "192.168.56.11"
+    config.vm.provider "vmware_desktop" do |vmware|
+      vmware.gui = true
+      vmware.allowlist_verified = true
+  
+    # bash provisioning
+    config.vm.provision "shell", inline: <<-SHELL
+      apt update
+      apt-mark hold linux-modules-5.4.0-137-generic linux-headers-5.4.0-137 linux-headers-5.4.0-137-generic linux-headers-generic linux-image-unsigned-5.4.0-137-generic linux-modules-5.4.0-137-generic
+      apt upgrade -y
+      apt autoremove -y
+    SHELL
+    end
+  end
