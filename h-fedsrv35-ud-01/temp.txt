@@ -1,0 +1,35 @@
+# define( 'AUTH_KEY',         'put your unique phrase here' );
+# define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+# define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+# define( 'NONCE_KEY',        'put your unique phrase here' );
+# define( 'AUTH_SALT',        'put your unique phrase here' );
+# define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+# define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+# define( 'NONCE_SALT',       'put your unique phrase here' );
+
+# define('AUTH_KEY',         '8P_42eS8}vp%D]`Kr]/Nn 4Ye|(Yx~}<SdId2^=kyrX]$/yKxG:GH|eZ;=z?%VC]');
+# define('SECURE_AUTH_KEY',  'eGkSdgej.crf|e,*Ig(tP@+-:4-{o+LPf{y:a(kIgrIBY/[H4I&<s !j%y9nx+H|');
+# define('LOGGED_IN_KEY',    '=8qww+[}h-Qs}urD#D>+_UY|/_HeL-gQg,_8FcO3NYZKWK|A)rd|.9)GVkD*Bvcb');
+# define('NONCE_KEY',        'Xe|iN)%c:>O}TqR%?lB*j?v#IN-R2V)dSi<).|N2.gtrv|?q,Uhu&ih#ADX5vM1n');
+# define('AUTH_SALT',        '9X;2/-Dx`!FrIES|@=k.#s@s=-; YNY+v>G=7k{5nqVDxzk|rh? a;^?W|/Z2o%?');
+# define('SECURE_AUTH_SALT', 'K}E8kz+*N9?mVmbZ./|h|!CV!(C|wX%&ak*xp(;W1o9KSHF=xP~q1`iD!hp>D/(q');
+# define('LOGGED_IN_SALT',   'If;K.~5dcK9*I+;L;a8-S<-siYhn^nE%bR?e6Z.{<ngPDXp#6)cA)x-V->EQ|><G');
+# define('NONCE_SALT',       'LEniPyZc]fYPNe?+9;x]ZaIi^KHuI,Af!MLj]++H[u]^)EvD3,N Z[F@7XM_e3ha');
+
+
+# More edits to wp-config.php
+    sudo -u www-data sed -i 's/define( '"'"'AUTH_KEY'"'"',         '"'"'put your unique phrase here'"'"' );/define('"'"'AUTH_KEY'"'"',         '"'"'8P_42eS8}vp%D]`Kr]/Nn 4Ye|(Yx~}<SdId2^=kyrX]$/yKxG:GH|eZ;=z?%VC]'"'"');/' /srv/www/wordpress/wp-config.php
+
+    sudo -u www-data sed -i 's/define( '"'"'SECURE_AUTH_KEY'"'"',  '"'"'put your unique phrase here'"'"' );/define('"'"'SECURE_AUTH_KEY'"'"',  '"'"'eGkSdgej.crf|e,*Ig(tP@+-:4-{o+LPf{y:a(kIgrIBY/[H4I&<s !j%y9nx+H|'"'"');/' /srv/www/wordpress/wp-config.php
+
+    sudo -u www-data sed -i 's/define( '"'"'LOGGED_IN_KEY'"'"',    '"'"'put your unique phrase here'"'"' );/define('"'"'LOGGED_IN_KEY'"'"',    '"'"'=8qww+[}h-Qs}urD#D>+_UY|/_HeL-gQg,_8FcO3NYZKWK|A)rd|.9)GVkD*Bvcb'"'"');/' /srv/www/wordpress/wp-config.php
+
+    sudo -u www-data sed -i 's/define( '"'"'NONCE_KEY'"'"',        '"'"'put your unique phrase here'"'"' );/define('"'"'NONCE_KEY'"'"',        '"'"'Xe|iN)%c:>O}TqR%?lB*j?v#IN-R2V)dSi<).|N2.gtrv|?q,Uhu&ih#ADX5vM1n'"'"');/' /srv/www/wordpress/wp-config.php
+
+    sudo -u www-data sed -i 's/define( '"'"'AUTH_SALT'"'"',        '"'"'put your unique phrase here'"'"' );/define('"'"'AUTH_SALT'"'"',        '"'"'9X;2/-Dx`!FrIES|@=k.#s@s=-; YNY+v>G=7k{5nqVDxzk|rh? a;^?W|/Z2o%?'"'"');/' /srv/www/wordpress/wp-config.php
+
+    sudo -u www-data sed -i 's/define( '"'"'SECURE_AUTH_SALT'"'"', '"'"'put your unique phrase here'"'"' );/define('"'"'SECURE_AUTH_SALT'"'"', '"'"'K}E8kz+*N9?mVmbZ./|h|!CV!(C|wX%&ak*xp(;W1o9KSHF=xP~q1`iD!hp>D/(q'"'"');/' /srv/www/wordpress/wp-config.php
+
+    sudo -u www-data sed -i 's/define( '"'"'LOGGED_IN_SALT'"'"',   '"'"'put your unique phrase here'"'"' );/define('"'"'LOGGED_IN_SALT'"'"',   '"'"'If;K.~5dcK9*I+;L;a8-S<-siYhn^nE%bR?e6Z.{<ngPDXp#6)cA)x-V->EQ|><G'"'"');/' /srv/www/wordpress/wp-config.php
+
+    sudo -u www-data sed -i 's/define( '"'"'NONCE_SALT'"'"',       '"'"'put your unique phrase here'"'"' );/define('"'"'NONCE_SALT'"'"',       '"'"'LEniPyZc]fYPNe?+9;x]ZaIi^KHuI,Af!MLj]++H[u]^)EvD3,N Z[F@7XM_e3ha'"'"');/' /srv/www/wordpress/wp-config.php
